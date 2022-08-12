@@ -1,0 +1,11 @@
+from project.astronaut.astronaut import Astronaut
+
+
+class Meteorologist(Astronaut):
+
+    def __init__(self, name):
+        super().__init__(name, 90)
+
+    @property
+    def oxygen_breathe(self):
+        return 15
